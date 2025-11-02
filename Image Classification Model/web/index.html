@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <title>Image Classifier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Image Classification Model</h1>
+    
+    <div class="description">
+  <p>This image classifier identifies objects in photos and classifies them into one of 10 categories:</p>
+  
+  <div class="class-grid">
+    <span class="class-pill"> Airplane</span>
+    <span class="class-pill"> Car</span>
+    <span class="class-pill"> Bird</span>
+    <span class="class-pill"> Cat</span>
+    <span class="class-pill"> Deer</span>
+    <span class="class-pill"> Dog</span>
+    <span class="class-pill"> Frog</span>
+    <span class="class-pill"> Horse</span>
+    <span class="class-pill"> Ship</span>
+    <span class="class-pill"> Truck</span>
+  </div>
+  
+  <p>Simply upload an image or paste an image URL to see classification results with confidence scores.</p>
+</div>
+
+    <div class="upload-options">
+      <!-- Drag and Drop Zone -->
+      <div id="dropZone" class="drop-zone">
+        <span class="drop-icon">↧</span>
+        <span class="drop-text">Drag & Drop Image Here</span>
+        <span class="or">OR</span>
+        <input type="file" name="image" id="imageInput" accept="image/*" />
+        <label for="imageInput" class="file-label">Select File</label>
+      </div>
+      
+      <!-- URL Input -->
+      <div class="url-help">
+        <p>Tip: For Google Images, right-click the image and select "Copy image address"</p>
+      </div>
+      <div class="url-upload">
+        <input type="text" id="imageUrl" placeholder="Paste image URL here (jpg, png, etc.)" />
+        <button id="fetchUrl">Classify URL</button>
+      </div>
+    </div>
+    
+    <!-- Image preview container - moved above results -->
+    <div id="previewContainer">
+      <img id="imagePreview" />
+    </div>
+    
+    <!-- Results container - will only show probabilities -->
+    <div id="result"></div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
