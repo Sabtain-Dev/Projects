@@ -1,0 +1,4 @@
+[2025-11-12 08:21:17.996408] Extracted archive: C:\Users\muham\Downloads\projects\ChessGame.zip to C:\Users\muham\Downloads\projects
+[2025-11-12 08:36:31.890905] Created file: C:\Users\muham\Downloads\projects\Chess Game\file.txt
+[2025-11-12 09:31:43.292285] Created file: C:\Users\muham\Downloads\projects\files.txt
+[2025-11-12 09:34:35.416148] Listed directory: E:\
