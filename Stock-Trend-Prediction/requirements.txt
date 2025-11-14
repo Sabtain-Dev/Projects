@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow
+keras
+flask
+streamlit
+jupyter
+pyspark
+findspark
+yfinance
