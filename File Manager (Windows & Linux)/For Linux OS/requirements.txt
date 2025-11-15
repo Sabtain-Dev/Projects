@@ -1,0 +1,8 @@
+# Linux File Explorer (CLI)
+# Requirements
+
+# Minimum Python version
+python>=3.8
+
+# Standard libraries used (no external packages)
+# os, shutil, subprocess, sys, zipfile, datetime, pathlib, stat, collections
