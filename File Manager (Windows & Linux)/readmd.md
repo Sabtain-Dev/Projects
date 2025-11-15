@@ -24,16 +24,18 @@ A modern, interactive **File Manager Dashboard** built using **Streamlit**, prov
 
 ### 1. Clone the repository
 ```bash
-    git clone https://github.com/your-username/streamlit-file-manager.git
-    cd streamlit-file-manager
-
+git clone https://github.com/your-username/streamlit-file-manager.git
+cd streamlit-file-manager
+```
 ### 2. Install dependencies
+```
 pip install -r requirements.txt
-
+```
 ### 3. Run the app
-- streamlit run file_manager.py
-- python -m streamlit run file_manager.py
-
+```
+streamlit run file_manager.py
+python -m streamlit run file_manager.py
+```
 ## 🧠 Usage Guide
 1. When the app opens in your browser:
 2. Select an operation from the sidebar (e.g., Create File, List Directory).
@@ -42,14 +44,15 @@ pip install -r requirements.txt
 5. Check system information (CPU, RAM, Disk) in the sidebar.
 6. All actions will be saved in history.txt automatically.
 
-streamlit-file-manager/
-│
-├── For Linux OS          # Streamlit App For Linux OS
-├── file_manager.py       # Main Streamlit app For Windows
-├── history.txt           # Action log file
-├── requirements.txt      # Dependencies
-├── README.md             # Project description
-└── .gitignore            # Git ignore rules
+## File Structure
+File-Manager/
+- │
+- ├── For Linux OS          # Streamlit App For Linux OS
+- ├── file_manager.py       # Main Streamlit app For Windows
+- ├── history.txt           # Action log file
+- ├── requirements.txt      # Dependencies
+- ├── README.md             # Project description
+- └── .gitignore            # Git ignore rules
 
 ## 🧠 Tech Stack
 1. Frontend/UI: Streamlit
@@ -59,3 +62,4 @@ streamlit-file-manager/
 ## 💡 Author
 
 Developed by: M. Sabtain Khan
+
