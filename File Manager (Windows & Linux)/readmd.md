@@ -1,6 +1,6 @@
 # 🗂️ Streamlit File Manager Dashboard
 
-A modern, interactive **File Manager Dashboard** built using **Streamlit**, providing real-time system information and file operations like creating, deleting, moving, compressing, and extracting files — all through a simple web interface.
+A modern, interactive **File Manager Dashboard** built using **Streamlit**, providing real time system information and file operations like creating, deleting, moving, compressing, and extracting files all through a simple web interface.
 
 ---
 
@@ -43,13 +43,13 @@ pip install -r requirements.txt
 6. All actions will be saved in history.txt automatically.
 
 streamlit-file-manager/
-- │
-- ├── For Linux OS          # Streamlit App For Linux OS
-- ├── file_manager.py       # Main Streamlit app For Windows
-- ├── history.txt           # Action log file
-- ├── requirements.txt      # Dependencies
-- ├── README.md             # Project description
-- └── .gitignore            # Git ignore rules
+│
+├── For Linux OS          # Streamlit App For Linux OS
+├── file_manager.py       # Main Streamlit app For Windows
+├── history.txt           # Action log file
+├── requirements.txt      # Dependencies
+├── README.md             # Project description
+└── .gitignore            # Git ignore rules
 
 ## 🧠 Tech Stack
 1. Frontend/UI: Streamlit
@@ -57,4 +57,5 @@ streamlit-file-manager/
 3. System Info: psutil, GPUtil
 
 ## 💡 Author
+
 Developed by: M. Sabtain Khan
