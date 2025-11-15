@@ -35,29 +35,31 @@ It provides common file system operations like listing, creating, deleting, copy
    ```bash
    chmod +x linux_file_explorer.py
 
-3. Run the script:
-    python3 linux_file_explorer.py
+### 3. Run the script:
+- python3 linux_file_explorer.py
 
-4. Usage
-    Type commands interactively. Example:
-    /home/user> ls
-    /home/user> cd Documents
-    /home/user/Documents> mkdir TestDir
-    /home/user/Documents> touch file.txt
-    /home/user/Documents> cp file.txt ../Backup/
-    /home/user/Documents> chmod 775 file.txt
-    /home/user/Documents> compress archive.zip file.txt TestDir
-    /home/user/Documents> extract archive.zip ./Extracted
-    /home/user/Documents> open file.txt
-    /home/user/Documents> search /home user_manual.pdf
+### 4. Usage
+- Type commands interactively. Example:
+1. /home/user> ls
+2. /home/user> cd Documents
+3. /home/user/Documents> mkdir TestDir
+4. /home/user/Documents> touch file.txt
+5. /home/user/Documents> cp file.txt ../Backup/
+6. /home/user/Documents> chmod 775 file.txt
+7. /home/user/Documents> compress archive.zip file.txt TestDir
+8. /home/user/Documents> extract archive.zip ./Extracted
+9. /home/user/Documents> open file.txt
+10. /home/user/Documents> search /home user_manual.pdf
+Type help to see all available commands.
 
-    Type help to see all available commands.
-
-5. Notes
+### 5. Notes
  - rmdir --rm will recursively delete directories after confirmation.
  - chmod accepts either octal (e.g., 775) or 9-character permission string (e.g., rwxr-xr-x).
  - search has a default maximum depth of 5 to prevent excessive recursion.
  - The project is Linux-only. Some commands (open, open-chrome) rely on xdg-open and Chrome/Chromium being installed.
 
-7. License
-    This project is open-source and free to use.
+### 7. License
+- This project is open-source and free to use.
+
+---
+
