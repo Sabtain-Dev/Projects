@@ -35,6 +35,7 @@ pip install -r requirements.txt
 python app.py
 
 ## Project Structure
+```bash
 chess-game/
 ├── app.py                 # Main entry point
 ├── Chess_Game.py          # AI logic and bot implementation
@@ -47,6 +48,7 @@ chess-game/
 │   ├── pawn-w.png        # White pawn
 │   ├── pawn-b.png        # Black pawn
 │   └── ...               # Other piece images
+```
 
 ## How to Play
 1. Launch the game using python app.py
