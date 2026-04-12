@@ -1,0 +1,80 @@
+{% extends 'finance/base.html' %}
+{% block title %}Transaction List{% endblock %}
+
+{% block content %}
+
+<div class="max-w-6xl mx-auto py-10 px-4">
+
+    <!-- Header + Export Button -->
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-indigo-600">
+            Transaction List
+        </h1>
+
+        <a href="{% url 'export_transactions' %}"
+           class="bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700">
+            Export to Excel
+        </a>
+    </div>
+
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full text-sm text-left">
+
+                <thead class="bg-indigo-600 text-white uppercase text-xs tracking-wider">
+                    <tr>
+                        <th class="px-6 py-3">Date</th>
+                        <th class="px-6 py-3">Title</th>
+                        <th class="px-6 py-3">Amount</th>
+                        <th class="px-6 py-3">Type</th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-gray-200">
+
+                    {% for transaction in transactions %}
+                    <tr class="hover:bg-gray-50 transition">
+
+                        <td class="px-6 py-4 text-gray-700">
+                            {{ transaction.date }}
+                        </td>
+
+                        <td class="px-6 py-4 font-medium text-gray-900">
+                            {{ transaction.title }}
+                        </td>
+
+                        <td class="px-6 py-4">
+                            ${{ transaction.amount }}
+                        </td>
+
+                        <td class="px-6 py-4 font-semibold">
+                            {% if transaction.transaction_type == "income" %}
+                                <span class="text-green-600">Credit</span>
+                            {% elif transaction.transaction_type == "expense" %}
+                                <span class="text-red-600">Debit</span>
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
+
+                    </tr>
+
+                    {% empty %}
+                    <tr>
+                        <td colspan="4" class="text-center py-8 text-gray-500">
+                            No transactions found.
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
